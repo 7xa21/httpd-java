@@ -1,0 +1,35 @@
+This program was turned in for course credit for
+
+CS3700/Computer Networks
+at Metropolitan State University of Denver
+
+by Randy Sorensen in Spring of 2013.
+
+The project was to create a working web server in Java and a
+command line client that could interact with the server.
+
+The server defaults to port 8080. It can be used to serve my
+project's documentation to a web browser:
+
+	cd HTTPServer
+	java HTTPServer ../doc
+
+Then, load this in your browser:
+
+	http://localhost:8080/
+
+The server offers a number of command line argument options, which
+include setting the port (-p PORT) and displaying the full HTTP
+request headers as received (-s). The option -h will display a
+full usage summary.
+
+The server knows to append "index.html" so it should work like
+any ordinary website.
+
+There is a simple, command-line based HTTP client in the
+HTTPClient subdirectory; it was designed to interact with the
+provided server, but it could interact with any server just as
+readily. It asks the user for all necessary information, such as
+the name and port of the server and which document to ask for in
+the GET request.
+
